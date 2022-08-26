@@ -1,422 +1,482 @@
 [
 	{
-		"uid": 257965,
-		"first_name": "Fae",
-		"last_name": "Mckusick",
-		"courses": "Web & Mobile II",
-		"email": "fxm3038@rit.edu"
-	},
-	{
-		"uid": 853011,
-		"first_name": "Brooks",
-		"last_name": "Brenon",
+		"uid": 68943436,
+		"username": "dxk1785",
+		"first_name": "Donald",
+		"last_name": "Kaminska",
 		"courses": "Web & Mobile I",
-		"email": "bxb6808@rit.edu"
+		"email": "dxk1785@rit.edu"
 	},
 	{
-		"uid": 312083,
-		"first_name": "Byron",
-		"last_name": "Swartzwelder",
+		"uid": 71294858,
+		"username": "bxc6221",
+		"first_name": "Bobbie",
+		"last_name": "Calihan",
+		"courses": "Web & Mobile I",
+		"email": "bxc6221@rit.edu"
+	},
+	{
+		"uid": 51999431,
+		"username": "uxs5342",
+		"first_name": "Uriel",
+		"last_name": "Sturtevant",
 		"courses": "Web & Mobile II",
-		"email": "bxs9289@rit.edu"
+		"email": "uxs5342@rit.edu"
 	},
 	{
-		"uid": 572607,
+		"uid": 85730824,
+		"username": "jxh8940",
+		"first_name": "Jack",
+		"last_name": "Hasey",
+		"courses": "Web & Mobile I",
+		"email": "jxh8940@rit.edu"
+	},
+	{
+		"uid": 30546484,
+		"username": "axg1109",
+		"first_name": "Ada",
+		"last_name": "Gahagan",
+		"courses": "Web & Mobile I",
+		"email": "axg1109@rit.edu"
+	},
+	{
+		"uid": 36349279,
+		"username": "lxk4326",
+		"first_name": "Leslie",
+		"last_name": "Kliner",
+		"courses": "Web & Mobile II",
+		"email": "lxk4326@rit.edu"
+	},
+	{
+		"uid": 52350517,
+		"username": "kxb4454",
+		"first_name": "Kim",
+		"last_name": "Berardi",
+		"courses": "Web & Mobile II",
+		"email": "kxb4454@rit.edu"
+	},
+	{
+		"uid": 31106352,
+		"username": "rxp9736",
+		"first_name": "Ramona",
+		"last_name": "Purpera",
+		"courses": "Web & Mobile II",
+		"email": "rxp9736@rit.edu"
+	},
+	{
+		"uid": 71542189,
+		"username": "sxl7707",
+		"first_name": "Stefanie",
+		"last_name": "Labrousse",
+		"courses": "Web & Mobile II",
+		"email": "sxl7707@rit.edu"
+	},
+	{
+		"uid": 99011764,
+		"username": "mxb3076",
 		"first_name": "Melvin",
-		"last_name": "Kenderdine",
+		"last_name": "Bendix",
 		"courses": "Web & Mobile I",
-		"email": "mxk2483@rit.edu"
+		"email": "mxb3076@rit.edu"
 	},
 	{
-		"uid": 868435,
-		"first_name": "Teddy",
-		"last_name": "Sciarra",
-		"courses": "Web & Mobile II",
-		"email": "txs5560@rit.edu"
-	},
-	{
-		"uid": 571234,
-		"first_name": "Shavonne",
-		"last_name": "Bougher",
+		"uid": 83631993,
+		"username": "mxh5659",
+		"first_name": "Milton",
+		"last_name": "Hultz",
 		"courses": "Web & Mobile I",
-		"email": "sxb5763@rit.edu"
+		"email": "mxh5659@rit.edu"
 	},
 	{
-		"uid": 944282,
-		"first_name": "Alpha",
-		"last_name": "Yanas",
-		"courses": "Web & Mobile II",
-		"email": "axy1902@rit.edu"
-	},
-	{
-		"uid": 639420,
-		"first_name": "Tammy",
-		"last_name": "Vaughan",
+		"uid": 73392347,
+		"username": "rxo9615",
+		"first_name": "Riley",
+		"last_name": "Oney",
 		"courses": "Web & Mobile I",
-		"email": "txv2757@rit.edu"
+		"email": "rxo9615@rit.edu"
 	},
 	{
-		"uid": 986540,
-		"first_name": "Mackenzie",
-		"last_name": "Gettleman",
+		"uid": 98070099,
+		"username": "nxs1671",
+		"first_name": "Nigel",
+		"last_name": "Slappy",
 		"courses": "Web & Mobile II",
-		"email": "mxg8200@rit.edu"
+		"email": "nxs1671@rit.edu"
 	},
 	{
-		"uid": 198066,
-		"first_name": "Julia",
-		"last_name": "Rigney",
+		"uid": 89534326,
+		"username": "cxw5662",
+		"first_name": "Cecilia",
+		"last_name": "Woolems",
 		"courses": "Web & Mobile I",
-		"email": "jxr1343@rit.edu"
+		"email": "cxw5662@rit.edu"
 	},
 	{
-		"uid": 860574,
-		"first_name": "Sharen",
-		"last_name": "Desiano",
+		"uid": 76672883,
+		"username": "exj8313",
+		"first_name": "Elijah",
+		"last_name": "Jokinen",
 		"courses": "Web & Mobile II",
-		"email": "sxd6058@rit.edu"
+		"email": "exj8313@rit.edu"
 	},
 	{
-		"uid": 317761,
-		"first_name": "Malachi",
-		"last_name": "Ackman",
+		"uid": 20586015,
+		"username": "pxn8144",
+		"first_name": "Percy",
+		"last_name": "Nylund",
+		"courses": "Web & Mobile II",
+		"email": "pxn8144@rit.edu"
+	},
+	{
+		"uid": 70562984,
+		"username": "sxg5308",
+		"first_name": "Shaniya",
+		"last_name": "Glory",
 		"courses": "Web & Mobile I",
-		"email": "mxa6575@rit.edu"
+		"email": "sxg5308@rit.edu"
 	},
 	{
-		"uid": 880177,
-		"first_name": "Vernice",
-		"last_name": "Borawski",
+		"uid": 57856286,
+		"username": "exk8155",
+		"first_name": "Emma",
+		"last_name": "Karch",
 		"courses": "Web & Mobile I",
-		"email": "vxb8309@rit.edu"
+		"email": "exk8155@rit.edu"
 	},
 	{
-		"uid": 897397,
-		"first_name": "Herminia",
-		"last_name": "Hochhalter",
+		"uid": 27792152,
+		"username": "rxg3498",
+		"first_name": "Ray",
+		"last_name": "Gelow",
+		"courses": "Web & Mobile II",
+		"email": "rxg3498@rit.edu"
+	},
+	{
+		"uid": 98046247,
+		"username": "dxf6953",
+		"first_name": "Dominick",
+		"last_name": "Fowble",
+		"courses": "Web & Mobile II",
+		"email": "dxf6953@rit.edu"
+	},
+	{
+		"uid": 86213528,
+		"username": "axi6072",
+		"first_name": "Alex",
+		"last_name": "Iwasko",
+		"courses": "Web & Mobile II",
+		"email": "axi6072@rit.edu"
+	},
+	{
+		"uid": 31667829,
+		"username": "jxt1695",
+		"first_name": "Jeannette",
+		"last_name": "Tranghese",
+		"courses": "Web & Mobile II",
+		"email": "jxt1695@rit.edu"
+	},
+	{
+		"uid": 51679458,
+		"username": "txm5112",
+		"first_name": "Tarik",
+		"last_name": "Martinezgomez",
 		"courses": "Web & Mobile I",
-		"email": "hxh4678@rit.edu"
+		"email": "txm5112@rit.edu"
 	},
 	{
-		"uid": 288598,
-		"first_name": "Celestine",
-		"last_name": "Deerman",
-		"courses": "Web & Mobile II",
-		"email": "cxd2624@rit.edu"
-	},
-	{
-		"uid": 262968,
-		"first_name": "Eddie",
-		"last_name": "Pantelis",
+		"uid": 26366010,
+		"username": "txc1256",
+		"first_name": "Twyla",
+		"last_name": "Coccaro",
 		"courses": "Web & Mobile I",
-		"email": "exp5907@rit.edu"
+		"email": "txc1256@rit.edu"
 	},
 	{
-		"uid": 405330,
-		"first_name": "Ferdinand",
-		"last_name": "Mcclurken",
+		"uid": 96382544,
+		"username": "axk1631",
+		"first_name": "Anne",
+		"last_name": "Kamstra",
+		"courses": "Web & Mobile II",
+		"email": "axk1631@rit.edu"
+	},
+	{
+		"uid": 37840585,
+		"username": "axc2689",
+		"first_name": "Artie",
+		"last_name": "Chaudhari",
 		"courses": "Web & Mobile I",
-		"email": "fxm3947@rit.edu"
+		"email": "axc2689@rit.edu"
 	},
 	{
-		"uid": 803542,
-		"first_name": "Sarah",
-		"last_name": "Hulak",
+		"uid": 15670581,
+		"username": "sxp5845",
+		"first_name": "Stewart",
+		"last_name": "Pellish",
 		"courses": "Web & Mobile II",
-		"email": "sxh4266@rit.edu"
+		"email": "sxp5845@rit.edu"
 	},
 	{
-		"uid": 781279,
-		"first_name": "Toni",
-		"last_name": "Michols",
+		"uid": 44746283,
+		"username": "cxk5865",
+		"first_name": "Clara",
+		"last_name": "Khatib",
 		"courses": "Web & Mobile II",
-		"email": "txm7121@rit.edu"
+		"email": "cxk5865@rit.edu"
 	},
 	{
-		"uid": 186028,
-		"first_name": "Mitzi",
-		"last_name": "Preve",
+		"uid": 82859719,
+		"username": "pxp8110",
+		"first_name": "Pearley",
+		"last_name": "Propp",
+		"courses": "Web & Mobile II",
+		"email": "pxp8110@rit.edu"
+	},
+	{
+		"uid": 22593527,
+		"username": "sxe6404",
+		"first_name": "Savannah",
+		"last_name": "Eugenio",
+		"courses": "Web & Mobile II",
+		"email": "sxe6404@rit.edu"
+	},
+	{
+		"uid": 52658194,
+		"username": "dxm2940",
+		"first_name": "Darleen",
+		"last_name": "Magnusen",
 		"courses": "Web & Mobile I",
-		"email": "mxp3175@rit.edu"
+		"email": "dxm2940@rit.edu"
 	},
 	{
-		"uid": 786690,
-		"first_name": "Lonnie",
-		"last_name": "Dauffenbach",
+		"uid": 68309823,
+		"username": "pxc8039",
+		"first_name": "Patrica",
+		"last_name": "Calcara",
 		"courses": "Web & Mobile II",
-		"email": "lxd4228@rit.edu"
+		"email": "pxc8039@rit.edu"
 	},
 	{
-		"uid": 570317,
-		"first_name": "Sonia",
-		"last_name": "Nyugen",
-		"courses": "Web & Mobile II",
-		"email": "sxn1092@rit.edu"
-	},
-	{
-		"uid": 216719,
-		"first_name": "Easter",
-		"last_name": "Pharris",
-		"courses": "Web & Mobile II",
-		"email": "exp5789@rit.edu"
-	},
-	{
-		"uid": 646687,
-		"first_name": "Melanie",
-		"last_name": "Crivellone",
-		"courses": "Web & Mobile II",
-		"email": "mxc2963@rit.edu"
-	},
-	{
-		"uid": 846132,
-		"first_name": "Clare",
-		"last_name": "Anas",
-		"courses": "Web & Mobile II",
-		"email": "cxa5396@rit.edu"
-	},
-	{
-		"uid": 492174,
-		"first_name": "Elise",
-		"last_name": "Lochotzki",
-		"courses": "Web & Mobile II",
-		"email": "exl5359@rit.edu"
-	},
-	{
-		"uid": 675408,
-		"first_name": "Ian",
-		"last_name": "Guertler",
-		"courses": "Web & Mobile II",
-		"email": "ixg6037@rit.edu"
-	},
-	{
-		"uid": 510242,
-		"first_name": "Clifford",
-		"last_name": "Dullen",
+		"uid": 22245027,
+		"username": "cxu2557",
+		"first_name": "Clarence",
+		"last_name": "Urwiler",
 		"courses": "Web & Mobile I",
-		"email": "cxd3978@rit.edu"
+		"email": "cxu2557@rit.edu"
 	},
 	{
-		"uid": 365597,
-		"first_name": "Olivia",
-		"last_name": "Chenoweth",
+		"uid": 40178699,
+		"username": "pxd6672",
+		"first_name": "Pat",
+		"last_name": "Delpozzo",
+		"courses": "Web & Mobile II",
+		"email": "pxd6672@rit.edu"
+	},
+	{
+		"uid": 93754555,
+		"username": "mxj1429",
+		"first_name": "Malissie",
+		"last_name": "Jannace",
 		"courses": "Web & Mobile I",
-		"email": "oxc4963@rit.edu"
+		"email": "mxj1429@rit.edu"
 	},
 	{
-		"uid": 503046,
-		"first_name": "Kerrie",
-		"last_name": "Petracco",
+		"uid": 27766712,
+		"username": "exr6437",
+		"first_name": "Early",
+		"last_name": "Resende",
 		"courses": "Web & Mobile I",
-		"email": "kxp3097@rit.edu"
+		"email": "exr6437@rit.edu"
 	},
 	{
-		"uid": 242740,
-		"first_name": "Garret",
-		"last_name": "Pufpaff",
+		"uid": 25890920,
+		"username": "oxh2166",
+		"first_name": "Ozella",
+		"last_name": "Hung",
 		"courses": "Web & Mobile I",
-		"email": "gxp3614@rit.edu"
+		"email": "oxh2166@rit.edu"
 	},
 	{
-		"uid": 745935,
-		"first_name": "Marisa",
-		"last_name": "Bezanson",
+		"uid": 44758701,
+		"username": "jxp6911",
+		"first_name": "Jessie",
+		"last_name": "Pelle",
 		"courses": "Web & Mobile I",
-		"email": "mxb4529@rit.edu"
+		"email": "jxp6911@rit.edu"
 	},
 	{
-		"uid": 539072,
-		"first_name": "Gonzalo",
-		"last_name": "Stangelo",
+		"uid": 83439459,
+		"username": "axh1489",
+		"first_name": "Adrian",
+		"last_name": "Hazelwood",
+		"courses": "Web & Mobile II",
+		"email": "axh1489@rit.edu"
+	},
+	{
+		"uid": 15245296,
+		"username": "sxd1979",
+		"first_name": "Stanton",
+		"last_name": "Delorenzo",
+		"courses": "Web & Mobile II",
+		"email": "sxd1979@rit.edu"
+	},
+	{
+		"uid": 10881714,
+		"username": "lxc8916",
+		"first_name": "Lonie",
+		"last_name": "Calarco",
+		"courses": "Web & Mobile II",
+		"email": "lxc8916@rit.edu"
+	},
+	{
+		"uid": 45969575,
+		"username": "pxh6084",
+		"first_name": "Patrick",
+		"last_name": "Hucks",
 		"courses": "Web & Mobile I",
-		"email": "gxs1862@rit.edu"
+		"email": "pxh6084@rit.edu"
 	},
 	{
-		"uid": 176534,
-		"first_name": "Rosemary",
-		"last_name": "Sevi",
+		"uid": 14342451,
+		"username": "dxr3420",
+		"first_name": "Dudley",
+		"last_name": "Reckert",
 		"courses": "Web & Mobile I",
-		"email": "rxs7222@rit.edu"
+		"email": "dxr3420@rit.edu"
 	},
 	{
-		"uid": 791417,
-		"first_name": "Adelia",
-		"last_name": "Shadron",
+		"uid": 13363237,
+		"username": "dxs1377",
+		"first_name": "Douglas",
+		"last_name": "Sabbe",
 		"courses": "Web & Mobile II",
-		"email": "axs4021@rit.edu"
+		"email": "dxs1377@rit.edu"
 	},
 	{
-		"uid": 512137,
-		"first_name": "Wilbert",
-		"last_name": "Kupersmith",
+		"uid": 54739383,
+		"username": "pxg4483",
+		"first_name": "Phoebe",
+		"last_name": "Gittleson",
 		"courses": "Web & Mobile II",
-		"email": "wxk6811@rit.edu"
+		"email": "pxg4483@rit.edu"
 	},
 	{
-		"uid": 339510,
-		"first_name": "Elnora",
-		"last_name": "Sandovar",
-		"courses": "Web & Mobile II",
-		"email": "exs5101@rit.edu"
-	},
-	{
-		"uid": 265328,
-		"first_name": "Leona",
-		"last_name": "Demuynck",
-		"courses": "Web & Mobile II",
-		"email": "lxd9239@rit.edu"
-	},
-	{
-		"uid": 911297,
-		"first_name": "Heidi",
-		"last_name": "Conlee",
+		"uid": 70939442,
+		"username": "fxl9963",
+		"first_name": "Freeman",
+		"last_name": "Leino",
 		"courses": "Web & Mobile I",
-		"email": "hxc7995@rit.edu"
+		"email": "fxl9963@rit.edu"
 	},
 	{
-		"uid": 412099,
-		"first_name": "Ronnie",
-		"last_name": "Groth",
+		"uid": 62546446,
+		"username": "fxv6034",
+		"first_name": "Floy",
+		"last_name": "Vernacchio",
 		"courses": "Web & Mobile I",
-		"email": "rxg8188@rit.edu"
+		"email": "fxv6034@rit.edu"
 	},
 	{
-		"uid": 499167,
-		"first_name": "Alyssia",
-		"last_name": "Kulovitz",
+		"uid": 22326450,
+		"username": "mxs3016",
+		"first_name": "Mitchel",
+		"last_name": "Siplin",
 		"courses": "Web & Mobile I",
-		"email": "axk8320@rit.edu"
+		"email": "mxs3016@rit.edu"
 	},
 	{
-		"uid": 794119,
-		"first_name": "Laurie",
-		"last_name": "Weichers",
+		"uid": 19490239,
+		"username": "hxm2378",
+		"first_name": "Hiram",
+		"last_name": "Milder",
 		"courses": "Web & Mobile I",
-		"email": "lxw2029@rit.edu"
+		"email": "hxm2378@rit.edu"
 	},
 	{
-		"uid": 283085,
-		"first_name": "Lorenzo",
-		"last_name": "Breakall",
-		"courses": "Web & Mobile II",
-		"email": "lxb3552@rit.edu"
-	},
-	{
-		"uid": 286389,
-		"first_name": "Desmond",
-		"last_name": "Elward",
-		"courses": "Web & Mobile II",
-		"email": "dxe2610@rit.edu"
-	},
-	{
-		"uid": 154195,
-		"first_name": "Melba",
-		"last_name": "Busta",
-		"courses": "Web & Mobile II",
-		"email": "mxb4128@rit.edu"
-	},
-	{
-		"uid": 623599,
-		"first_name": "Arley",
-		"last_name": "Longobardo",
-		"courses": "Web & Mobile II",
-		"email": "axl9406@rit.edu"
-	},
-	{
-		"uid": 480819,
-		"first_name": "King",
-		"last_name": "Camarano",
+		"uid": 77402261,
+		"username": "jxp3496",
+		"first_name": "Jewel",
+		"last_name": "Pfisterer",
 		"courses": "Web & Mobile I",
-		"email": "kxc2816@rit.edu"
+		"email": "jxp3496@rit.edu"
 	},
 	{
-		"uid": 315811,
-		"first_name": "Claire",
-		"last_name": "Kraning",
+		"uid": 43336660,
+		"username": "exl1204",
+		"first_name": "Efren",
+		"last_name": "Lefort",
 		"courses": "Web & Mobile I",
-		"email": "cxk8689@rit.edu"
+		"email": "exl1204@rit.edu"
 	},
 	{
-		"uid": 883439,
-		"first_name": "Elvis",
-		"last_name": "Postin",
+		"uid": 62422332,
+		"username": "cxh7688",
+		"first_name": "Carrie",
+		"last_name": "Harrett",
 		"courses": "Web & Mobile II",
-		"email": "exp1712@rit.edu"
+		"email": "cxh7688@rit.edu"
 	},
 	{
-		"uid": 682641,
-		"first_name": "Grant",
-		"last_name": "Rainone",
-		"courses": "Web & Mobile II",
-		"email": "gxr4736@rit.edu"
-	},
-	{
-		"uid": 695215,
-		"first_name": "Israel",
-		"last_name": "Kirwin",
+		"uid": 86177246,
+		"username": "axg8291",
+		"first_name": "Avery",
+		"last_name": "Gandolfo",
 		"courses": "Web & Mobile I",
-		"email": "ixk1961@rit.edu"
+		"email": "axg8291@rit.edu"
 	},
 	{
-		"uid": 976284,
-		"first_name": "Hermina",
-		"last_name": "Devico",
+		"uid": 12020877,
+		"username": "mxv6202",
+		"first_name": "Malvina",
+		"last_name": "Vegliante",
 		"courses": "Web & Mobile II",
-		"email": "hxd2773@rit.edu"
+		"email": "mxv6202@rit.edu"
 	},
 	{
-		"uid": 919811,
-		"first_name": "Bertram",
-		"last_name": "Glupker",
-		"courses": "Web & Mobile II",
-		"email": "bxg6801@rit.edu"
-	},
-	{
-		"uid": 682776,
-		"first_name": "Verl",
-		"last_name": "Dehond",
+		"uid": 52665266,
+		"username": "cxr2194",
+		"first_name": "Cortez",
+		"last_name": "Reuer",
 		"courses": "Web & Mobile I",
-		"email": "vxd2466@rit.edu"
+		"email": "cxr2194@rit.edu"
 	},
 	{
-		"uid": 245090,
-		"first_name": "Paul",
-		"last_name": "Fuerte",
-		"courses": "Web & Mobile II",
-		"email": "pxf5491@rit.edu"
-	},
-	{
-		"uid": 520830,
-		"first_name": "Dean",
-		"last_name": "Auch",
-		"courses": "Web & Mobile II",
-		"email": "dxa8004@rit.edu"
-	},
-	{
-		"uid": 459044,
-		"first_name": "Clive",
-		"last_name": "Campora",
+		"uid": 89400622,
+		"username": "mxr8167",
+		"first_name": "Margueritta",
+		"last_name": "Rackleff",
 		"courses": "Web & Mobile I",
-		"email": "cxc3609@rit.edu"
+		"email": "mxr8167@rit.edu"
 	},
 	{
-		"uid": 746832,
-		"first_name": "August",
-		"last_name": "Parda",
-		"courses": "Web & Mobile II",
-		"email": "axp1200@rit.edu"
+		"uid": 20122601,
+		"username": "txm2321",
+		"first_name": "Tressa",
+		"last_name": "Mcquage",
+		"courses": "Web & Mobile I",
+		"email": "txm2321@rit.edu"
 	},
 	{
-		"uid": 377675,
-		"first_name": "Buster",
-		"last_name": "Coyer",
+		"uid": 32326455,
+		"username": "oxh9960",
+		"first_name": "Odie",
+		"last_name": "Hodel",
 		"courses": "Web & Mobile II",
-		"email": "bxc7383@rit.edu"
+		"email": "oxh9960@rit.edu"
 	},
 	{
-		"uid": 895280,
-		"first_name": "Bradly",
-		"last_name": "Meers",
+		"uid": 97175408,
+		"username": "pxl4574",
+		"first_name": "Patrick",
+		"last_name": "Linn",
+		"courses": "Web & Mobile I",
+		"email": "pxl4574@rit.edu"
+	},
+	{
+		"uid": 84835261,
+		"username": "jxm5264",
+		"first_name": "Jerry",
+		"last_name": "Mamaril",
 		"courses": "Web & Mobile II",
-		"email": "bxm1013@rit.edu"
+		"email": "jxm5264@rit.edu"
 	}
 ]
