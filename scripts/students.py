@@ -3,15 +3,16 @@ import json
 import random
 from scriptlibs.data_commons import *
 
-def make_uid():
+def make_uid() -> int:
     return random.randint(10000000, 99999999)
 
 def make_email(fname, lname) -> str:
     return "{}x{}{}@rit.edu".format(fname[0].lower(), lname[0].lower(), str(random.randint(1000, 9999)))
 
-def create_student(uid, fname, lname, courses, email) -> dict: 
+def create_student(uid, username,fname, lname, courses, email) -> dict: 
     student = {
         "uid": uid,
+        "username": username,
         "first_name": fname,
         "last_name": lname,
         "courses": courses,
@@ -19,7 +20,7 @@ def create_student(uid, fname, lname, courses, email) -> dict:
     }
     return student
 
-def create_n_students(n):
+def create_n_students(n) -> None:
     return_students = []
     courses = get_courses()
     first_names = get_first_names()
@@ -30,7 +31,8 @@ def create_n_students(n):
         l_name = last_names[random.randint(0, len(last_names) - 1)]
         course = courses[random.randint(0, len(courses) - 1)]
         email = make_email(f_name, l_name)
-        student = create_student(uid, f_name, l_name, course, email)
+        username = email.split("@")[0]
+        student = create_student(uid, username, f_name, l_name, course, email)
         return_students.append(student)
     with open("../students/students.json", "w") as outfile:
         json.dump(return_students, outfile)
