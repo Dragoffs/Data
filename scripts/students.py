@@ -1,3 +1,6 @@
+import socket
+import struct
+
 import sys
 import json
 import random
@@ -9,7 +12,7 @@ def make_uid() -> int:
 def make_email(fname, lname) -> str:
     return "{}x{}{}@rit.edu".format(fname[0].lower(), lname[0].lower(), str(random.randint(1000, 9999)))
 
-def create_student(uid, username,fname, lname, courses, email) -> dict: 
+def create_student(uid, username,fname, lname, courses, email, ip) -> dict: 
     student = {
         "uid": uid,
         "username": username,
@@ -17,6 +20,7 @@ def create_student(uid, username,fname, lname, courses, email) -> dict:
         "last_name": lname,
         "courses": courses,
         "email": email,
+        "ip": ip
     }
     return student
 
@@ -31,8 +35,9 @@ def create_n_students(n) -> None:
         l_name = last_names[random.randint(0, len(last_names) - 1)]
         course = courses[random.randint(0, len(courses) - 1)]
         email = make_email(f_name, l_name)
+        ip = socket.inet_ntoa(struct.pack('>I', random.randint(1, 0xffffffff)))
         username = email.split("@")[0]
-        student = create_student(uid, username, f_name, l_name, course, email)
+        student = create_student(uid, username, f_name, l_name, course, email, ip)
         return_students.append(student)
     with open("../students/students.json", "w") as outfile:
         json.dump(return_students, outfile)
