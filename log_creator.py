@@ -55,7 +55,7 @@ def main() -> None:
     f = open("dummy_log.log", "w+")
     students_list = get_students()
     logged_students = []
-    # n = 0
+    error_students = ["axb2371", "sxv2937", "axr3857", "pxc4341", "nxa7069"]
     while(True):
         current_student = students_list[random.randint(0, len(students_list) - 1)]
         student_id = current_student['username']
@@ -63,19 +63,22 @@ def main() -> None:
         current_date = datetime.datetime.now()
         date_format = current_date.strftime("%b %w %H:%M:%S")
         action = random.randint(1, 3)
-        if action == 1 and student_id not in logged_students:
+        if student_id in error_students:
             create_password_fail(date_format, student_id, student_ip, f)
             print("This is password fail by {}".format(student_id))
-        if action == 2 and student_id not in logged_students:
-            logged_students.append(student_id)
-            create_sucessful_login(date_format, student_id, student_ip, f)
-            print("This is success login by {}".format(student_id))
-        if action == 3 and student_id in logged_students:
-            logged_students.remove(student_id)
-            create_disconnect(date_format, student_id, student_ip, f)
-            print("This is log out by {}".format(student_id))
+        else:
+            if action == 1 and student_id not in logged_students:
+                create_password_fail(date_format, student_id, student_ip, f)
+                print("This is password fail by {}".format(student_id))
+            if action == 2 and student_id not in logged_students:
+                logged_students.append(student_id)
+                create_sucessful_login(date_format, student_id, student_ip, f)
+                print("This is success login by {}".format(student_id))
+            if action == 3 and student_id in logged_students:
+                logged_students.remove(student_id)
+                create_disconnect(date_format, student_id, student_ip, f)
+                print("This is log out by {}".format(student_id))
         time.sleep(random.randint(1, 20))
-        # n += 1
         
 if __name__ == "__main__":
     main()

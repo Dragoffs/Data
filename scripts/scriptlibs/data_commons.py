@@ -24,5 +24,5 @@ def get_courses() -> list:
     with open("../classes/classes.json") as json_file:
         data = json.load(json_file)
         for i in range(len(data)):
-            return_list.append(data[i]["class_name"])
+            return_list.append(data[i]["class_code"])
     return return_list

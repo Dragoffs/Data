@@ -1,1 +1,182 @@
-[{"uid": 98603498, "username": "pxh6470", "first_name": "Pollie", "last_name": "Haffley", "courses": "Web & Mobile I", "email": "pxh6470@rit.edu", "ip": "13.225.207.52"}, {"uid": 87108433, "username": "cxd4657", "first_name": "Camilla", "last_name": "Dispensa", "courses": "Web & Mobile I", "email": "cxd4657@rit.edu", "ip": "58.31.160.30"}, {"uid": 48236987, "username": "bxm3165", "first_name": "Belinda", "last_name": "Mcconico", "courses": "Web & Mobile I", "email": "bxm3165@rit.edu", "ip": "180.9.102.55"}, {"uid": 73432936, "username": "cxp3181", "first_name": "Celeste", "last_name": "Pirrello", "courses": "Web & Mobile I", "email": "cxp3181@rit.edu", "ip": "242.43.140.187"}, {"uid": 46595217, "username": "axv4708", "first_name": "Arlene", "last_name": "Very", "courses": "Web & Mobile I", "email": "axv4708@rit.edu", "ip": "77.253.136.185"}, {"uid": 83127924, "username": "bxl9718", "first_name": "Brennan", "last_name": "Leder", "courses": "Web & Mobile I", "email": "bxl9718@rit.edu", "ip": "209.184.49.54"}, {"uid": 67457411, "username": "fxw7189", "first_name": "Fanny", "last_name": "Wyrwas", "courses": "Web & Mobile II", "email": "fxw7189@rit.edu", "ip": "173.111.18.85"}, {"uid": 44681426, "username": "cxn3067", "first_name": "Cornell", "last_name": "Nicklay", "courses": "Web & Mobile II", "email": "cxn3067@rit.edu", "ip": "41.45.168.132"}, {"uid": 70098778, "username": "mxo4043", "first_name": "Malvin", "last_name": "Oharra", "courses": "Web & Mobile I", "email": "mxo4043@rit.edu", "ip": "115.11.168.146"}, {"uid": 39092779, "username": "txh8551", "first_name": "Tobe", "last_name": "Hoegger", "courses": "Web & Mobile II", "email": "txh8551@rit.edu", "ip": "136.183.96.197"}, {"uid": 95195943, "username": "cxb8710", "first_name": "Conrad", "last_name": "Berendes", "courses": "Web & Mobile II", "email": "cxb8710@rit.edu", "ip": "231.167.14.82"}, {"uid": 45091480, "username": "sxh7615", "first_name": "Shea", "last_name": "Hobdy", "courses": "Web & Mobile I", "email": "sxh7615@rit.edu", "ip": "23.220.182.29"}, {"uid": 93634362, "username": "axa2926", "first_name": "Abe", "last_name": "Ardister", "courses": "Web & Mobile I", "email": "axa2926@rit.edu", "ip": "202.198.166.16"}, {"uid": 94511274, "username": "axa5766", "first_name": "Ann", "last_name": "Allee", "courses": "Web & Mobile I", "email": "axa5766@rit.edu", "ip": "101.37.6.249"}, {"uid": 28664319, "username": "mxd9684", "first_name": "Mckinley", "last_name": "Dimattina", "courses": "Web & Mobile II", "email": "mxd9684@rit.edu", "ip": "249.9.182.76"}, {"uid": 20875571, "username": "pxc7495", "first_name": "Pierce", "last_name": "Caillet", "courses": "Web & Mobile I", "email": "pxc7495@rit.edu", "ip": "91.44.98.71"}, {"uid": 78318122, "username": "ixh4999", "first_name": "Ivan", "last_name": "Hammerle", "courses": "Web & Mobile II", "email": "ixh4999@rit.edu", "ip": "252.228.210.126"}, {"uid": 42789600, "username": "yxr9077", "first_name": "Yvette", "last_name": "Ricalde", "courses": "Web & Mobile II", "email": "yxr9077@rit.edu", "ip": "133.175.159.128"}, {"uid": 39204024, "username": "kxp4662", "first_name": "Kelly", "last_name": "Pihlaja", "courses": "Web & Mobile I", "email": "kxp4662@rit.edu", "ip": "13.216.89.13"}, {"uid": 32704637, "username": "lxp7406", "first_name": "Lilly", "last_name": "Pioli", "courses": "Web & Mobile I", "email": "lxp7406@rit.edu", "ip": "95.16.196.170"}]
+[
+	{
+		"uid": 88515262,
+		"username": "axb2371",
+		"first_name": "Adam",
+		"last_name": "Battung",
+		"courses": "ISTE 140-1",
+		"email": "axb2371@rit.edu",
+		"ip": "173.128.10.143"
+	},
+	{
+		"uid": 95149130,
+		"username": "lxh2932",
+		"first_name": "Leon",
+		"last_name": "Haislet",
+		"courses": "ISTE 140-2",
+		"email": "lxh2932@rit.edu",
+		"ip": "61.152.83.190"
+	},
+	{
+		"uid": 34056497,
+		"username": "sxv2937",
+		"first_name": "Selena",
+		"last_name": "Vonholten",
+		"courses": "ISTE 140-2",
+		"email": "sxv2937@rit.edu",
+		"ip": "54.180.24.144"
+	},
+	{
+		"uid": 98401213,
+		"username": "axr3857",
+		"first_name": "Antony",
+		"last_name": "Rennegarbe",
+		"courses": "ISTE 140-2",
+		"email": "axr3857@rit.edu",
+		"ip": "174.9.20.231"
+	},
+	{
+		"uid": 61626486,
+		"username": "bxc1046",
+		"first_name": "Blanche",
+		"last_name": "Contrucci",
+		"courses": "ISTE 140-1",
+		"email": "bxc1046@rit.edu",
+		"ip": "170.106.45.100"
+	},
+	{
+		"uid": 23275228,
+		"username": "kxb1755",
+		"first_name": "Katherine",
+		"last_name": "Bohuslav",
+		"courses": "ISTE 140-2",
+		"email": "kxb1755@rit.edu",
+		"ip": "87.78.174.44"
+	},
+	{
+		"uid": 70277139,
+		"username": "txn8010",
+		"first_name": "Tristan",
+		"last_name": "Nicolai",
+		"courses": "ISTE 140-1",
+		"email": "txn8010@rit.edu",
+		"ip": "237.11.206.138"
+	},
+	{
+		"uid": 90328277,
+		"username": "oxc7805",
+		"first_name": "Oral",
+		"last_name": "Clossey",
+		"courses": "ISTE 140-2",
+		"email": "oxc7805@rit.edu",
+		"ip": "133.152.188.126"
+	},
+	{
+		"uid": 40335673,
+		"username": "pxc4341",
+		"first_name": "Paris",
+		"last_name": "Cassarino",
+		"courses": "ISTE 140-1",
+		"email": "pxc4341@rit.edu",
+		"ip": "37.15.140.209"
+	},
+	{
+		"uid": 28782853,
+		"username": "nxa7069",
+		"first_name": "Nadia",
+		"last_name": "Azua",
+		"courses": "ISTE 140-1",
+		"email": "nxa7069@rit.edu",
+		"ip": "245.169.165.37"
+	},
+	{
+		"uid": 62619847,
+		"username": "rxh6882",
+		"first_name": "Rigoberto",
+		"last_name": "Hapner",
+		"courses": "ISTE 140-2",
+		"email": "rxh6882@rit.edu",
+		"ip": "132.116.253.18"
+	},
+	{
+		"uid": 13958306,
+		"username": "bxb1756",
+		"first_name": "Brad",
+		"last_name": "Brocious",
+		"courses": "ISTE 140-2",
+		"email": "bxb1756@rit.edu",
+		"ip": "73.148.131.70"
+	},
+	{
+		"uid": 50274070,
+		"username": "lxs3827",
+		"first_name": "Lindsey",
+		"last_name": "Stebner",
+		"courses": "ISTE 140-1",
+		"email": "lxs3827@rit.edu",
+		"ip": "33.108.100.239"
+	},
+	{
+		"uid": 77121101,
+		"username": "wxl1163",
+		"first_name": "Winnifred",
+		"last_name": "Lavie",
+		"courses": "ISTE 140-2",
+		"email": "wxl1163@rit.edu",
+		"ip": "194.239.128.97"
+	},
+	{
+		"uid": 94681156,
+		"username": "axc2531",
+		"first_name": "Anna",
+		"last_name": "Coulombe",
+		"courses": "ISTE 140-1",
+		"email": "axc2531@rit.edu",
+		"ip": "229.20.0.11"
+	},
+	{
+		"uid": 36922541,
+		"username": "exk3892",
+		"first_name": "Elvira",
+		"last_name": "Kleinschmidt",
+		"courses": "ISTE 140-1",
+		"email": "exk3892@rit.edu",
+		"ip": "4.236.35.246"
+	},
+	{
+		"uid": 99887703,
+		"username": "rxk2666",
+		"first_name": "Raegan",
+		"last_name": "Keillor",
+		"courses": "ISTE 140-1",
+		"email": "rxk2666@rit.edu",
+		"ip": "196.71.64.228"
+	},
+	{
+		"uid": 28553017,
+		"username": "jxk8318",
+		"first_name": "Josefa",
+		"last_name": "Kasko",
+		"courses": "ISTE 140-2",
+		"email": "jxk8318@rit.edu",
+		"ip": "101.46.54.43"
+	},
+	{
+		"uid": 57810498,
+		"username": "dxk5148",
+		"first_name": "Davy",
+		"last_name": "Kapic",
+		"courses": "ISTE 140-2",
+		"email": "dxk5148@rit.edu",
+		"ip": "158.183.58.132"
+	},
+	{
+		"uid": 48994306,
+		"username": "fxh8248",
+		"first_name": "Frank",
+		"last_name": "Hernandez",
+		"courses": "ISTE 140-2",
+		"email": "fxh8248@rit.edu",
+		"ip": "176.89.98.181"
+	}
+]

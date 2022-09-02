@@ -2,71 +2,11 @@
 	{
 		"first_name": "Fredrick",
 		"last_name": "Tal",
-		"courses": "Web & Mobile I",
+		"courses": [
+			"ISTE 140-1",
+			"ISTE 140-2"
+		],
 		"email": "Fredrick.Tal@rit.edu",
-		"password": "test"
-	},
-	{
-		"first_name": "Antonio",
-		"last_name": "Buchholtz",
-		"courses": "Web & Mobile II",
-		"email": "Antonio.Buchholtz@rit.edu",
-		"password": "test"
-	},
-	{
-		"first_name": "Ciera",
-		"last_name": "Fante",
-		"courses": "Web & Mobile II",
-		"email": "Ciera.Fante@rit.edu",
-		"password": "test"
-	},
-	{
-		"first_name": "Felton",
-		"last_name": "Ludolph",
-		"courses": "Web & Mobile II",
-		"email": "Felton.Ludolph@rit.edu",
-		"password": "test"
-	},
-	{
-		"first_name": "Paris",
-		"last_name": "Toenies",
-		"courses": "Web & Mobile I",
-		"email": "Paris.Toenies@rit.edu",
-		"password": "test"
-	},
-	{
-		"first_name": "Cassidy",
-		"last_name": "Couvillion",
-		"courses": "Web & Mobile I",
-		"email": "Cassidy.Couvillion@rit.edu",
-		"password": "test"
-	},
-	{
-		"first_name": "Nikolas",
-		"last_name": "Billodeau",
-		"courses": "Web & Mobile II",
-		"email": "Nikolas.Billodeau@rit.edu",
-		"password": "test"
-	},
-	{
-		"first_name": "Ferdinand",
-		"last_name": "Chuah",
-		"courses": "Web & Mobile II",
-		"email": "Ferdinand.Chuah@rit.edu",
-		"password": "test"
-	},
-	{
-		"first_name": "Michell",
-		"last_name": "Emke",
-		"courses": "Web & Mobile II",
-		"email": "Michell.Emke@rit.edu",
-		"password": "test"
-	},
-	{
-		"first_name": "Madie",
-		"last_name": "Curlis",
-		"courses": "Web & Mobile II",
-		"email": "Madie.Curlis@rit.edu",
 		"password": "test"
 	}
 ]
