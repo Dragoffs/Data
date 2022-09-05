@@ -6,6 +6,7 @@ from parse import parse
 import sys
 import re
 import json
+from dataclasses import dataclass
 
 parser = argparse.ArgumentParser(description="Extract login failure/success for user from log file and write to database") 
 parser.add_argument(
@@ -28,12 +29,25 @@ parser.add_argument(
         help="Relative / absolute path to a file to hold JSON output"
 )
 
+@dataclass
+class RegexEntry:
+    login_status: bool
+    re: re.Pattern
+
 ARGS = parser.parse_args()
 SSHD_RE = re.compile(r"sshd\[\d+\]")
+
 FAILED_PASSWORD_RE = re.compile(r"Failed password for (\w+)\s")
 ACCEPTED_PASSWORD_RE = re.compile(r"Accepted password for (\w+)\s")
 #AUTH_FAIL_RE = re.compile(r"authentication failure;.*user=(.+)")
 # OTHER FAILURES? Network failure, etc.???
+
+RE_LIST = [
+    # Accept = True, Failure = False
+    RegexEntry(True, ACCEPTED_PASSWORD_RE),
+    RegexEntry(False, FAILED_PASSWORD_RE),
+]
+
 
 # Insert or initialize
 def update_dict(d: dict, user: str, success: bool) -> dict:
@@ -69,27 +83,18 @@ def parse_log(log_fn: str, out_fn: str, timestamp: dt.datetime) -> None:
         # Read the rest of the file
         while line != "":
             if SSHD_RE.search(line) != None:
+
                 # Parse line and add to dict
+                for entry in RE_LIST:
+                    login_status = entry.login_status
+                    result = entry.re.search(line)
+                    
+                    if result != None:
+                        user = result.groups(0)[0]
+                        login_dict = update_dict(login_dict, user, login_status)
+                        break
 
-
-                # TODO these checks can be generalized to one function that takes a compiled re as an argument
-                # the compiled regexes can be stored in a collection that can be iterated over with each line reada
-                # and short-circuited when a regex is matched
-
-                accept = ACCEPTED_PASSWORD_RE.search(line)
-                if accept != None:
-                    user = accept.groups(0)[0]
-                    login_dict = update_dict(login_dict, user, True)
-                    line = log_fp.readline()
-                    continue
-
-                fail = FAILED_PASSWORD_RE.search(line)
-                if fail != None:
-                    user = fail.groups(0)[0]
-                    login_dict = update_dict(login_dict, user, False)
-                    line = log_fp.readline()
-                    continue
-
+            # Continue reading lines
             line = log_fp.readline()
 
     # write dict out to json, to be replaced with calls to mongodb api
@@ -121,6 +126,8 @@ def main() -> int:
     new_ts = parse_log(log_fn, out_fn, timestamp)
 
     # write new timestamp to a file
+
+    return 0
 
 if __name__ == "__main__":
     main()
