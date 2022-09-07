@@ -41,6 +41,16 @@ FAILED_PASSWORD_RE = re.compile(r"Failed password for (\w+)\s")
 ACCEPTED_PASSWORD_RE = re.compile(r"Accepted password for (\w+)\s")
 #AUTH_FAIL_RE = re.compile(r"authentication failure;.*user=(.+)")
 # OTHER FAILURES? Network failure, etc.???
+# Username does not exist... How can this be associated with a known user
+# [
+#   Student:
+#       [
+# Timestamp should be just the date
+#           timestamp: { successes: n, failures: n}
+#           timestamp: ...
+#       ],
+#   Student...
+# ]
 
 RE_LIST = [
     # Accept = True, Failure = False
