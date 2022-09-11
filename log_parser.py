@@ -7,6 +7,7 @@ import sys
 import re
 import json
 from dataclasses import dataclass
+import os
 
 parser = argparse.ArgumentParser(description="Extract login failure/success for user from log file and write to database") 
 parser.add_argument(
@@ -36,80 +37,105 @@ class RegexEntry:
 
 ARGS = parser.parse_args()
 SSHD_RE = re.compile(r"sshd\[\d+\]")
+TS_RE = re.compile(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+([1-3]?[0-9])\s+([0-1][0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])")
 
+INVALID_USER_PASSWORD_RE = re.compile(r"Failed password for invalid user (\w+)\s")
 FAILED_PASSWORD_RE = re.compile(r"Failed password for (\w+)\s")
 ACCEPTED_PASSWORD_RE = re.compile(r"Accepted password for (\w+)\s")
-#AUTH_FAIL_RE = re.compile(r"authentication failure;.*user=(.+)")
-# OTHER FAILURES? Network failure, etc.???
-# Username does not exist... How can this be associated with a known user
-# [
-#   Student:
-#       [
-# Timestamp should be just the date
-#           timestamp: { successes: n, failures: n}
-#           timestamp: ...
-#       ],
-#   Student...
-# ]
 
 RE_LIST = [
-    # Accept = True, Failure = False
+    RegexEntry(False, INVALID_USER_PASSWORD_RE), # Should be checked before others
     RegexEntry(True, ACCEPTED_PASSWORD_RE),
     RegexEntry(False, FAILED_PASSWORD_RE),
 ]
 
 
 # Insert or initialize
-def update_dict(d: dict, user: str, success: bool) -> dict:
-    key = "successes" if success else "failures"
+"""
+{
+    user:
+    {
+        "Month Day":
+        [
+            {
+                "result": "failure",
+                "time": "00:00:00"
+            },
+
+            {
+                " "
+            },
+            ...
+        ]
+        ...
+    }
+}
+"""
+def update_dict(d: dict, user: str, success: bool, timestamp: dt.datetime) -> dict:
+    result = "success" if success else "failure"
+    date = "{:02d}/{:02d}".format(timestamp.month, timestamp.day)
+    time = "{:02d}:{:02d}:{:02d}".format(timestamp.hour, timestamp.minute, timestamp.second)
 
     if user not in d:
-        d[user] = {"successes": 0, "failures": 0}
+        d[user] = {}
 
-    d[user][key] += 1
+        if date not in d[user]:
+            d[user][date] = []
+
+    d[user][date].append({"result": result, "time": time})
 
     return d
 
+# Using timestamp, scan new / changed lines and add to the database
+# Side effect: write to MongoDB via API
+# Save most recent timestamp in a buffer and return it when the function is finished
 def parse_log(log_fn: str, out_fn: str, timestamp: dt.datetime) -> None:
-    # Using timestamp, scan new / changed lines and add to the database
-    # Side effect: write to MongoDB via API
-    # Save most recent timestamp in a buffer and return it when the function is finished
-
     login_dict = {}
     line = ""
+    curr_ts = None
     
-    # Parse log
     with open(log_fn, "r") as log_fp:
-        curr_ts = None # current timestamp
         line = log_fp.readline()
+        # Current timestamp (search for timestamp string in line, convert to timestamp with 'parse' library)
+        ts_result = TS_RE.search(line)
+        if ts_result != None:
+            curr_ts = parse("{timestamp:ts}", ts_result.group(0))["timestamp"]
 
-        # Read lines until the last timestamp is exceeded
-        # TODO figure out how to quickly read out the timestamp, will also help with storing most recent timestamp for return
-#        while curr_ts == None or curr_ts < timestamp:
-#            line = log_fp.readline()
-#            result = parse("{timestamp:ts}", line.strip())
-#            curr_ts = result["timestamp"]
-#
+        # Read lines until the loaded timestamp is exceeded
+        while curr_ts == None or curr_ts < timestamp:
+            line = log_fp.readline()
+            ts_result = TS_RE.search(line)
+            if ts_result != None:
+                curr_ts = parse("{timestamp:ts}", ts_result.group(0))["timestamp"]
+
         # Read the rest of the file
         while line != "":
+
+            # Don't parse if its not an sshd line
             if SSHD_RE.search(line) != None:
 
                 # Parse line and add to dict
                 for entry in RE_LIST:
-                    login_status = entry.login_status
-                    result = entry.re.search(line)
+                    re_result = entry.re.search(line)
                     
-                    if result != None:
-                        user = result.groups(0)[0]
-                        login_dict = update_dict(login_dict, user, login_status)
+                    if re_result != None:
+                        login_status = entry.login_status
+                        user = re_result.groups(0)[0]
+                        login_dict = update_dict(login_dict, user, login_status, curr_ts)
                         break
 
-            # Continue reading lines
+            # Continue reading
             line = log_fp.readline()
+            ts_result = TS_RE.search(line)
+            if ts_result != None:
+                curr_ts = parse("{timestamp:ts}", ts_result.group(0))["timestamp"]
 
     # write dict out to json, to be replaced with calls to mongodb api
     with open(out_fn, 'w') as out_fp:
         json.dump(login_dict, out_fp)
+
+    # write out to timestamp file
+    print(curr_ts)
 
 
 def main() -> int:
@@ -121,6 +147,10 @@ def main() -> int:
     timestamp = dt.datetime(1, 1, 1) 
 
     # Load last timestamp
+    if not os.path.exists(time_fn):
+        print("ERROR: no timestamp file with name '{}'".format(time_fn))
+        return 1
+
     with open(time_fn, "r") as time_fp:
         line = time_fp.readline()
 

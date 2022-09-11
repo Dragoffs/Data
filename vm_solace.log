@@ -1,0 +1,213 @@
+/var/log/messages:Sep  8 15:37:51 localhost sshd-keygen: Generating SSH2 RSA host key: [  OK  ]
+/var/log/messages:Sep  8 15:37:51 localhost sshd-keygen: Generating SSH2 ECDSA host key: [  OK  ]
+/var/log/messages:Sep  8 15:37:51 localhost sshd-keygen: Generating SSH2 ED25519 host key: [  OK  ]
+
+/var/log/secure:Sep  8 15:37:54 localhost sshd[961]: Server listening on 0.0.0.0 port 22.
+/var/log/secure:Sep  8 15:37:54 localhost sshd[961]: Server listening on :: port 22.
+/var/log/secure:Sep  8 15:42:55 solace sshd[924]: Server listening on 0.0.0.0 port 22.
+/var/log/secure:Sep  8 15:42:55 solace sshd[924]: Server listening on :: port 22.
+/var/log/secure:Sep  8 15:57:08 solace sshd[924]: Received signal 15; terminating.
+/var/log/secure:Sep  8 15:57:08 solace sshd[9983]: Server listening on 0.0.0.0 port 22.
+/var/log/secure:Sep  8 15:57:08 solace sshd[9983]: Server listening on :: port 22.
+/var/log/secure:Sep  8 16:00:46 solace sudo:    luke : TTY=tty1 ; PWD=/home/luke ; USER=root ; COMMAND=/bin/systemctl status sshd
+/var/log/secure:Sep  8 16:00:57 solace sshd[18666]: Connection reset by 10.0.2.2 port 53122 [preauth]
+
+/var/log/secure:Sep  8 16:03:18 solace sshd[18682]: Accepted password for luke from 10.0.2.2 port 53130 ssh2
+/var/log/secure:Sep  8 16:03:19 solace sshd[18682]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+
+/var/log/secure:Sep  8 16:03:19 solace sshd[18686]: Received disconnect from 10.0.2.2 port 53130:11: disconnected by user
+/var/log/secure:Sep  8 16:03:19 solace sshd[18686]: Disconnected from 10.0.2.2 port 53130
+/var/log/secure:Sep  8 16:03:19 solace sshd[18682]: pam_unix(sshd:session): session closed for user luke
+
+/var/log/secure:Sep  8 16:04:01 solace sshd[18731]: Accepted password for luke from 10.0.2.2 port 53132 ssh2
+/var/log/secure:Sep  8 16:04:02 solace sshd[18731]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+
+/var/log/secure:Sep  8 16:04:02 solace sshd[18731]: pam_unix(sshd:session): session closed for user luke
+
+/var/log/secure:Sep  8 16:06:29 solace sshd[18909]: Accepted password for luke from 10.0.2.2 port 53200 ssh2
+/var/log/secure:Sep  8 16:06:30 solace sshd[18909]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+
+/var/log/secure:Sep  8 16:06:30 solace sshd[18909]: pam_unix(sshd:session): session closed for user luke
+
+/var/log/secure:Sep  8 16:06:43 solace sshd[18916]: Accepted password for luke from 10.0.2.2 port 53207 ssh2
+/var/log/secure:Sep  8 16:06:43 solace sshd[18916]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+
+/var/log/secure:Sep  8 16:06:44 solace sshd[18916]: pam_unix(sshd:session): session closed for user luke
+
+/var/log/secure:Sep  8 16:06:54 solace sshd[18923]: Accepted password for luke from 10.0.2.2 port 53209 ssh2
+/var/log/secure:Sep  8 16:06:54 solace sshd[18923]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+
+/var/log/secure:Sep  8 16:06:54 solace sshd[18923]: pam_unix(sshd:session): session closed for user luke
+
+/var/log/secure:Sep  8 16:37:46 solace sshd[7373]: Accepted password for luke from 10.0.2.2 port 61585 ssh2
+/var/log/secure:Sep  8 16:37:46 solace sshd[7373]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+
+/var/log/secure:Sep  8 16:38:11 solace sshd[7377]: Received disconnect from 10.0.2.2 port 61585:11: disconnected by user
+/var/log/secure:Sep  8 16:38:11 solace sshd[7377]: Disconnected from 10.0.2.2 port 61585
+/var/log/secure:Sep  8 16:38:11 solace sshd[7373]: pam_unix(sshd:session): session closed for user luke
+
+/var/log/secure:Sep  8 16:39:56 solace sshd[1106]: Server listening on 0.0.0.0 port 22.
+/var/log/secure:Sep  8 16:39:56 solace sshd[1106]: Server listening on :: port 22.
+
+/var/log/secure:Sep  8 16:41:17 solace sshd[8665]: Accepted password for luke from 10.0.2.2 port 61591 ssh2
+/var/log/secure:Sep  8 16:41:18 solace sshd[8665]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+
+/var/log/secure:Sep  8 16:42:31 solace sshd[8669]: Received disconnect from 10.0.2.2 port 61591:11: disconnected by user
+/var/log/secure:Sep  8 16:42:31 solace sshd[8669]: Disconnected from 10.0.2.2 port 61591
+
+# Auth failure (password failure)
+/var/log/secure:Sep  8 16:42:31 solace sshd[8665]: pam_unix(sshd:session): session closed for user luke
+/var/log/secure:Sep  8 16:44:23 solace sshd[8830]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway  user=luke
+/var/log/secure:Sep  8 16:44:26 solace sshd[8830]: Failed password for luke from 10.0.2.2 port 61604 ssh2
+/var/log/secure:Sep  8 16:44:29 solace sshd[8830]: Failed password for luke from 10.0.2.2 port 61604 ssh2
+/var/log/secure:Sep  8 16:44:31 solace sshd[8830]: Failed password for luke from 10.0.2.2 port 61604 ssh2
+/var/log/secure:Sep  8 16:44:31 solace sshd[8830]: Connection reset by 10.0.2.2 port 61604 [preauth]
+/var/log/secure:Sep  8 16:44:31 solace sshd[8830]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway  user=luke
+
+# Invalid user
+/var/log/secure:Sep  8 16:44:45 solace sshd[8835]: Invalid user jones from 10.0.2.2 port 61606
+/var/log/secure:Sep  8 16:44:45 solace sshd[8835]: input_userauth_request: invalid user jones [preauth]
+/var/log/secure:Sep  8 16:44:46 solace sshd[8835]: pam_unix(sshd:auth): check pass; user unknown
+/var/log/secure:Sep  8 16:44:46 solace sshd[8835]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway
+/var/log/secure:Sep  8 16:44:48 solace sshd[8835]: Failed password for invalid user jones from 10.0.2.2 port 61606 ssh2
+/var/log/secure:Sep  8 16:44:49 solace sshd[8835]: pam_unix(sshd:auth): check pass; user unknown
+/var/log/secure:Sep  8 16:44:51 solace sshd[8835]: Failed password for invalid user jones from 10.0.2.2 port 61606 ssh2
+/var/log/secure:Sep  8 16:44:52 solace sshd[8835]: pam_unix(sshd:auth): check pass; user unknown
+/var/log/secure:Sep  8 16:44:54 solace sshd[8835]: Failed password for invalid user jones from 10.0.2.2 port 61606 ssh2
+/var/log/secure:Sep  8 16:44:54 solace sshd[8835]: Connection reset by 10.0.2.2 port 61606 [preauth]
+/var/log/secure:Sep  8 16:44:54 solace sshd[8835]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway
+
+/var/log/secure:Sep  8 16:45:02 solace sshd[8845]: Accepted password for root from 10.0.2.2 port 61608 ssh2
+/var/log/secure:Sep  8 16:45:02 solace sshd[8845]: pam_unix(sshd:session): session opened for user root by (uid=0)
+/var/log/secure:Sep  8 16:45:23 solace sshd[8845]: Received disconnect from 10.0.2.2 port 61608:11: disconnected by user
+/var/log/secure:Sep  8 16:45:23 solace sshd[8845]: Disconnected from 10.0.2.2 port 61608
+/var/log/secure:Sep  8 16:45:23 solace sshd[8845]: pam_unix(sshd:session): session closed for user root
+
+/var/log/secure:Sep  8 16:45:40 solace sshd[8916]: Invalid user notreal from 10.0.2.2 port 61610
+/var/log/secure:Sep  8 16:45:40 solace sshd[8916]: input_userauth_request: invalid user notreal [preauth]
+/var/log/secure:Sep  8 16:45:41 solace sshd[8916]: pam_unix(sshd:auth): check pass; user unknown
+/var/log/secure:Sep  8 16:45:41 solace sshd[8916]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway
+/var/log/secure:Sep  8 16:45:43 solace sshd[8916]: Failed password for invalid user notreal from 10.0.2.2 port 61610 ssh2
+/var/log/secure:Sep  8 16:45:44 solace sshd[8916]: Failed password for invalid user notreal from 10.0.2.2 port 61610 ssh2
+/var/log/secure:Sep  8 16:45:44 solace sshd[8916]: Failed password for invalid user notreal from 10.0.2.2 port 61610 ssh2
+/var/log/secure:Sep  8 16:45:44 solace sshd[8916]: Connection reset by 10.0.2.2 port 61610 [preauth]
+
+/var/log/secure:Sep  8 16:45:58 solace sshd[8927]: Accepted password for luke from 10.0.2.2 port 61612 ssh2
+/var/log/secure:Sep  8 16:45:59 solace sshd[8927]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+/var/log/secure:Sep  8 16:46:01 solace sshd[8931]: Received disconnect from 10.0.2.2 port 61612:11: disconnected by user
+/var/log/secure:Sep  8 16:46:01 solace sshd[8931]: Disconnected from 10.0.2.2 port 61612
+/var/log/secure:Sep  8 16:46:01 solace sshd[8927]: pam_unix(sshd:session): session closed for user luke
+
+/var/log/secure:Sep  8 16:46:04 solace sshd[8986]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway  user=luke
+/var/log/secure:Sep  8 16:46:07 solace sshd[8986]: Failed password for luke from 10.0.2.2 port 61614 ssh2
+/var/log/secure:Sep  8 16:46:10 solace sshd[8986]: Failed password for luke from 10.0.2.2 port 61614 ssh2
+/var/log/secure:Sep  8 16:46:12 solace sshd[8986]: Failed password for luke from 10.0.2.2 port 61614 ssh2
+/var/log/secure:Sep  8 16:46:12 solace sshd[8986]: Connection reset by 10.0.2.2 port 61614 [preauth]
+/var/log/secure:Sep  8 16:46:12 solace sshd[8986]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway  user=luke
+
+/var/log/secure:Sep  8 16:46:17 solace sshd[8991]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway  user=luke
+/var/log/secure:Sep  8 16:46:19 solace sshd[8991]: Failed password for luke from 10.0.2.2 port 61617 ssh2
+/var/log/secure:Sep  8 16:46:21 solace sshd[8991]: Accepted password for luke from 10.0.2.2 port 61617 ssh2
+/var/log/secure:Sep  8 16:46:21 solace sshd[8991]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+/var/log/secure:Sep  8 16:46:41 solace sshd[8996]: Received disconnect from 10.0.2.2 port 61617:11: disconnected by user
+/var/log/secure:Sep  8 16:46:41 solace sshd[8996]: Disconnected from 10.0.2.2 port 61617
+/var/log/secure:Sep  8 16:46:41 solace sshd[8991]: pam_unix(sshd:session): session closed for user luke
+
+/var/log/secure:Sep  8 16:47:15 solace sshd[1111]: Server listening on 0.0.0.0 port 22.
+/var/log/secure:Sep  8 16:47:15 solace sshd[1111]: Server listening on :: port 22.
+
+/var/log/secure:Sep  8 16:56:27 solace sshd[2092]: Invalid user jones from 10.0.2.2 port 61825
+/var/log/secure:Sep  8 16:56:27 solace sshd[2092]: input_userauth_request: invalid user jones [preauth]
+/var/log/secure:Sep  8 16:56:28 solace sshd[2092]: pam_unix(sshd:auth): check pass; user unknown
+/var/log/secure:Sep  8 16:56:28 solace sshd[2092]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway
+/var/log/secure:Sep  8 16:56:30 solace sshd[2092]: Failed password for invalid user jones from 10.0.2.2 port 61825 ssh2
+/var/log/secure:Sep  8 16:56:30 solace sshd[2092]: Failed password for invalid user jones from 10.0.2.2 port 61825 ssh2
+/var/log/secure:Sep  8 16:56:31 solace sshd[2092]: pam_unix(sshd:auth): check pass; user unknown
+/var/log/secure:Sep  8 16:56:33 solace sshd[2092]: Failed password for invalid user jones from 10.0.2.2 port 61825 ssh2
+/var/log/secure:Sep  8 16:56:33 solace sshd[2092]: Connection reset by 10.0.2.2 port 61825 [preauth]
+/var/log/secure:Sep  8 16:56:33 solace sshd[2092]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway
+
+/var/log/secure:Sep  8 16:56:42 solace sshd[2117]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway  user=luke
+/var/log/secure:Sep  8 16:56:44 solace sshd[2117]: Failed password for luke from 10.0.2.2 port 61828 ssh2
+/var/log/secure:Sep  8 16:56:45 solace sshd[2117]: Failed password for luke from 10.0.2.2 port 61828 ssh2
+/var/log/secure:Sep  8 16:56:49 solace sshd[2117]: Failed password for luke from 10.0.2.2 port 61828 ssh2
+/var/log/secure:Sep  8 16:56:49 solace sshd[2117]: Connection reset by 10.0.2.2 port 61828 [preauth]
+/var/log/secure:Sep  8 16:56:49 solace sshd[2117]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway  user=luke
+
+/var/log/secure:Sep  8 16:56:55 solace sshd[2121]: Accepted password for luke from 10.0.2.2 port 61830 ssh2
+/var/log/secure:Sep  8 16:56:55 solace sshd[2121]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+/var/log/secure:Sep  8 16:56:58 solace sshd[2125]: Received disconnect from 10.0.2.2 port 61830:11: disconnected by user
+/var/log/secure:Sep  8 16:56:58 solace sshd[2125]: Disconnected from 10.0.2.2 port 61830
+/var/log/secure:Sep  8 16:56:58 solace sshd[2121]: pam_unix(sshd:session): session closed for user luke
+
+/var/log/secure:Sep  8 16:57:05 solace sshd[2196]: Accepted password for root from 10.0.2.2 port 61832 ssh2
+/var/log/secure:Sep  8 16:57:05 solace sshd[2196]: pam_unix(sshd:session): session opened for user root by (uid=0)
+/var/log/secure:Sep  8 16:57:07 solace sshd[2196]: pam_unix(sshd:session): session closed for user root
+
+/var/log/secure:Sep  8 16:57:11 solace sshd[2243]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway  user=root
+/var/log/secure:Sep  8 16:57:11 solace sshd[2243]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+/var/log/secure:Sep  8 16:57:13 solace sshd[2243]: Failed password for root from 10.0.2.2 port 61834 ssh2
+/var/log/secure:Sep  8 16:57:14 solace sshd[2243]: pam_succeed_if(sshd:auth): requirement "uid >= 1000" not met by user "root"
+/var/log/secure:Sep  8 16:57:16 solace sshd[2243]: Failed password for root from 10.0.2.2 port 61834 ssh2
+/var/log/secure:Sep  8 16:57:16 solace sshd[2243]: Failed password for root from 10.0.2.2 port 61834 ssh2
+/var/log/secure:Sep  8 16:57:16 solace sshd[2243]: Connection reset by 10.0.2.2 port 61834 [preauth]
+/var/log/secure:Sep  8 16:57:16 solace sshd[2243]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway  user=root
+
+/var/log/secure:Sep  8 16:57:23 solace sshd[2256]: Accepted password for root from 10.0.2.2 port 61836 ssh2
+/var/log/secure:Sep  8 16:57:23 solace sshd[2256]: pam_unix(sshd:session): session opened for user root by (uid=0)
+/var/log/secure:Sep  8 16:57:25 solace sshd[2256]: Received disconnect from 10.0.2.2 port 61836:11: disconnected by user
+/var/log/secure:Sep  8 16:57:25 solace sshd[2256]: Disconnected from 10.0.2.2 port 61836
+/var/log/secure:Sep  8 16:57:25 solace sshd[2256]: pam_unix(sshd:session): session closed for user root
+
+/var/log/secure:Sep  8 16:57:31 solace sshd[2303]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway  user=luke
+/var/log/secure:Sep  8 16:57:33 solace sshd[2303]: Failed password for luke from 10.0.2.2 port 61838 ssh2
+/var/log/secure:Sep  8 16:57:34 solace sshd[2303]: Accepted password for luke from 10.0.2.2 port 61838 ssh2
+/var/log/secure:Sep  8 16:57:34 solace sshd[2303]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+/var/log/secure:Sep  8 16:57:35 solace sshd[2308]: Received disconnect from 10.0.2.2 port 61838:11: disconnected by user
+/var/log/secure:Sep  8 16:57:35 solace sshd[2308]: Disconnected from 10.0.2.2 port 61838
+/var/log/secure:Sep  8 16:57:35 solace sshd[2303]: pam_unix(sshd:session): session closed for user luke
+
+/var/log/secure:Sep  8 16:57:40 solace sshd[2363]: Accepted password for luke from 10.0.2.2 port 61840 ssh2
+/var/log/secure:Sep  8 16:57:40 solace sshd[2363]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+/var/log/secure:Sep  8 16:57:42 solace sshd[2367]: Received disconnect from 10.0.2.2 port 61840:11: disconnected by user
+/var/log/secure:Sep  8 16:57:42 solace sshd[2367]: Disconnected from 10.0.2.2 port 61840
+/var/log/secure:Sep  8 16:57:42 solace sshd[2363]: pam_unix(sshd:session): session closed for user luke
+
+/var/log/secure:Sep  8 16:58:15 solace sshd[2430]: Invalid user notreal from 10.0.2.2 port 61842
+/var/log/secure:Sep  8 16:58:15 solace sshd[2430]: input_userauth_request: invalid user notreal [preauth]
+/var/log/secure:Sep  8 16:58:15 solace sshd[2430]: pam_unix(sshd:auth): check pass; user unknown
+/var/log/secure:Sep  8 16:58:15 solace sshd[2430]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway
+/var/log/secure:Sep  8 16:58:18 solace sshd[2430]: Failed password for invalid user notreal from 10.0.2.2 port 61842 ssh2
+/var/log/secure:Sep  8 16:58:18 solace sshd[2430]: Failed password for invalid user notreal from 10.0.2.2 port 61842 ssh2
+/var/log/secure:Sep  8 16:58:19 solace sshd[2430]: pam_unix(sshd:auth): check pass; user unknown
+/var/log/secure:Sep  8 16:58:21 solace sshd[2430]: Failed password for invalid user notreal from 10.0.2.2 port 61842 ssh2
+/var/log/secure:Sep  8 16:58:21 solace sshd[2430]: Connection reset by 10.0.2.2 port 61842 [preauth]
+/var/log/secure:Sep  8 16:58:21 solace sshd[2430]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=gateway
+
+/var/log/secure:Sep  8 16:59:56 solace sshd[1111]: Received signal 15; terminating.
+/var/log/secure:Sep  8 17:00:47 solace sshd[2488]: Server listening on 0.0.0.0 port 22.
+/var/log/secure:Sep  8 17:00:47 solace sshd[2488]: Server listening on :: port 22.
+/var/log/secure:Sep  8 17:10:10 solace sudo:    luke : TTY=tty1 ; PWD=/home/luke ; USER=root ; COMMAND=/bin/grep sshd /var/log/messages
+/var/log/secure:Sep  8 17:10:14 solace sudo:    luke : TTY=tty1 ; PWD=/home/luke ; USER=root ; COMMAND=/bin/grep sshd /var/log/secure
+/var/log/secure:Sep  8 17:10:41 solace sudo:    luke : TTY=tty1 ; PWD=/home/luke ; USER=root ; COMMAND=/bin/grep sshd /var/log/secure
+/var/log/secure:Sep  8 17:10:56 solace sudo:    luke : TTY=tty1 ; PWD=/home/luke ; USER=root ; COMMAND=/bin/grep sshd /var/log/secure
+
+/var/log/secure:Sep  8 17:12:05 solace sshd[3238]: Accepted password for luke from 10.0.2.2 port 61989 ssh2
+/var/log/secure:Sep  8 17:12:05 solace sshd[3238]: pam_unix(sshd:session): session opened for user luke by (uid=0)
+/var/log/secure:Sep  8 17:12:18 solace polkitd[667]: Operator of unix-process:3309:151292 successfully authenticated as unix-user:luke to gain TEMPORARY authorization for action org.freedesktop.systemd1.manage-units for system-bus-name::1.92 [systemctl stop sshd] (owned by unix-user:luke)
+/var/log/secure:Sep  8 17:12:18 solace sshd[2488]: Received signal 15; terminating.
+/var/log/secure:Sep  8 17:12:51 solace sshd[3242]: Received disconnect from 10.0.2.2 port 61989:11: disconnected by user
+/var/log/secure:Sep  8 17:12:51 solace sshd[3242]: Disconnected from 10.0.2.2 port 61989
+/var/log/secure:Sep  8 17:12:51 solace sshd[3238]: pam_unix(sshd:session): session closed for user luke
+
+/var/log/secure:Sep  8 17:13:45 solace sudo:    luke : TTY=tty1 ; PWD=/home/luke ; USER=root ; COMMAND=/bin/systemctl start sshd
+/var/log/secure:Sep  8 17:13:45 solace sshd[3371]: Server listening on 0.0.0.0 port 22.
+/var/log/secure:Sep  8 17:13:45 solace sshd[3371]: Server listening on :: port 22.
+
+
+
+# Failure modes
+Failed password for (invalid user \w+ | \w+)
+
+# Success modes
+Accepted password for \w+
