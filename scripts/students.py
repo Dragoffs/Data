@@ -20,7 +20,8 @@ def create_student(uid, username,fname, lname, courses, email, ip) -> dict:
         "last_name": lname,
         "courses": courses,
         "email": email,
-        "ip": ip
+        "ip": ip,
+        "logs": {}
     }
     return student
 
@@ -33,7 +34,7 @@ def create_n_students(n) -> None:
         uid = make_uid()
         f_name = first_names[random.randint(0, len(first_names) - 1)]
         l_name = last_names[random.randint(0, len(last_names) - 1)]
-        course = courses[random.randint(0, len(courses) - 1)]
+        course = [courses[random.randint(0, len(courses) - 1)]]
         email = make_email(f_name, l_name)
         ip = socket.inet_ntoa(struct.pack('>I', random.randint(1, 0xffffffff)))
         username = email.split("@")[0]

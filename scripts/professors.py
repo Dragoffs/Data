@@ -12,7 +12,8 @@ def create_professor(fname, lname, courses, email, password) -> dict:
         "last_name": lname,
         "courses": courses,
         "email": email,
-        "password": password
+        "password": password,
+        "pinned": []
     }
     return professor
 
