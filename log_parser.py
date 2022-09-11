@@ -49,7 +49,6 @@ RE_LIST = [
     RegexEntry(False, FAILED_PASSWORD_RE),
 ]
 
-
 # Insert or initialize
 """
 {
@@ -134,9 +133,7 @@ def parse_log(log_fn: str, out_fn: str, timestamp: dt.datetime) -> None:
     with open(out_fn, 'w') as out_fp:
         json.dump(login_dict, out_fp)
 
-    # write out to timestamp file
-    print(curr_ts)
-
+    return curr_ts
 
 def main() -> int:
     log_fn = ARGS.logfile
@@ -166,6 +163,8 @@ def main() -> int:
     new_ts = parse_log(log_fn, out_fn, timestamp)
 
     # write new timestamp to a file
+    with open(time_fn, "w") as time_fp:
+        time_fp.write(new_ts.strftime("%b %-d %H:%M:%S"))
 
     return 0
 
