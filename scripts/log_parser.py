@@ -72,8 +72,10 @@ RE_LIST = [
 """
 def update_dict(d: dict, user: str, success: bool, timestamp: dt.datetime) -> dict:
     result = "success" if success else "failure"
-    date = "{:02d}/{:02d}".format(timestamp.month, timestamp.day)
-    time = "{:02d}:{:02d}:{:02d}".format(timestamp.hour, timestamp.minute, timestamp.second)
+    date = timestamp.strftime("%b %-d")
+    time = timestamp.strftime("%H:%M:%S")
+#    date = "{:02d}/{:02d}".format(timestamp.month, timestamp.day)
+#    time = "{:02d}:{:02d}:{:02d}".format(timestamp.hour, timestamp.minute, timestamp.second)
 
     if user not in d:
         d[user] = {}
