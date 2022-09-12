@@ -34,7 +34,7 @@ def main():
     #Students that are currently logged in.
     logged_students = []
     #Student_id that are permanent failure go in here
-    error_students = ["lxm5229", ]
+    error_students = ["lxm5229", "pxp4868", "mxm1276", "exp7267", "rxh6668"]
     while(True):
         current_date = datetime.datetime.now()
         random_student = students_list[random.randint(0, len(students_list) - 1)]
@@ -56,7 +56,7 @@ def main():
                 insert_log(student_id, current_date, "Disconnect")
                 print("This is log out by {}".format(student_id))
         #Creates an interval of random time
-        time.sleep(random.randint(1, 20))
+        time.sleep(random.randint(50, 100))
 
 
 if __name__ == "__main__":
