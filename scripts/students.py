@@ -21,7 +21,7 @@ def create_student(uid, username,fname, lname, courses, email, ip) -> dict:
         "courses": courses,
         "email": email,
         "ip": ip,
-        "logs": {}
+        "logs": []
     }
     return student
 

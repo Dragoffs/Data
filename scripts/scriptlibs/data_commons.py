@@ -3,6 +3,14 @@
 #############################
 import json
 
+def get_students() -> list: 
+    f = open("./students/students.json")
+    return_list = []
+    data = json.load(f)
+    for student in data:
+        return_list.append(student)
+    return return_list
+
 def get_first_names() -> list:
     return_list = []
     f = open("./data/firstnames.csv")
