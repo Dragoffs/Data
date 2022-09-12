@@ -59,4 +59,4 @@ Lines not already parsed are matched against the three patterns above and login 
 
 Login attempts (result and time) for each user are stored in a list organized by date.
 
-The results are written to a JSON file, but in the final version of the parser should transmit the data to the database via the MongoDB API. 
+The results are written to a JSON file, but in the final version of the parser they should transmit the data to the database via the MongoDB API. 
