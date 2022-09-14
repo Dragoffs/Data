@@ -8,6 +8,8 @@ import re
 import json
 from dataclasses import dataclass
 import os
+import pymongo
+import dnspython
 
 parser = argparse.ArgumentParser(description="Extract login failure/success for user from log file and write to database") 
 parser.add_argument(
@@ -34,6 +36,8 @@ parser.add_argument(
 class RegexEntry:
     login_status: bool
     re: re.Pattern
+
+MONGO = pymongo.MongoClient("mongodb+srv://username:sl2password@dblogs.haqtcfn.mongodb.net/?retryWrites=true&w=majority")
 
 ARGS = parser.parse_args()
 SSHD_RE = re.compile(r"sshd\[\d+\]")
