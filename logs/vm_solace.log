@@ -211,3 +211,7 @@ Failed password for (invalid user \w+ | \w+)
 
 # Success modes
 Accepted password for \w+
+/var/log/secure:Sep  9 17:12:05 solace sshd[3238]: Accepted password for luke from 10.0.2.2 port 61989 ssh2
+/var/log/secure:Sep  10 17:12:05 solace sshd[3238]: Accepted password for luke from 10.0.2.2 port 61989 ssh2
+/var/log/secure:Sep  12 17:12:05 solace sshd[3238]: Accepted password for luke from 10.0.2.2 port 61989 ssh2
+/var/log/secure:Sep  19 17:12:05 solace sshd[3238]: Accepted password for luke from 10.0.2.2 port 61989 ssh2

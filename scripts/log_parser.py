@@ -9,7 +9,7 @@ import json
 from dataclasses import dataclass
 import os
 import pymongo
-import dnspython
+import dns
 
 parser = argparse.ArgumentParser(description="Extract login failure/success for user from log file and write to database") 
 parser.add_argument(
@@ -37,7 +37,7 @@ class RegexEntry:
     login_status: bool
     re: re.Pattern
 
-MONGO = pymongo.MongoClient("mongodb+srv://username:sl2password@dblogs.haqtcfn.mongodb.net/?retryWrites=true&w=majority")
+SL2_MONGO = pymongo.MongoClient("mongodb+srv://username:sl2password@dblogs.haqtcfn.mongodb.net/?retryWrites=true&w=majority")["SL2"]
 
 ARGS = parser.parse_args()
 SSHD_RE = re.compile(r"sshd\[\d+\]")
@@ -53,7 +53,17 @@ RE_LIST = [
     RegexEntry(False, FAILED_PASSWORD_RE),
 ]
 
-# Insert or initialize
+def insert_to_mongo(login_dict: dict) -> None:
+    students = SL2_MONGO["Students"]
+
+    for user in login_dict: # user is the top-level key
+        for date in login_dict[user]: # lists of results organized by date
+                students.update_one(
+                    { "username": user },
+                    { "$addToSet": { "logs": { date: login_dict[user][date] } } },
+                    upsert=True
+                )
+
 """
 {
     user:
@@ -78,14 +88,13 @@ def update_dict(d: dict, user: str, success: bool, timestamp: dt.datetime) -> di
     result = "success" if success else "failure"
     date = timestamp.strftime("%b %-d")
     time = timestamp.strftime("%H:%M:%S")
-#    date = "{:02d}/{:02d}".format(timestamp.month, timestamp.day)
-#    time = "{:02d}:{:02d}:{:02d}".format(timestamp.hour, timestamp.minute, timestamp.second)
 
     if user not in d:
         d[user] = {}
+        d[user][date] = []
 
-        if date not in d[user]:
-            d[user][date] = []
+    if date not in d[user]:
+        d[user][date] = []
 
     d[user][date].append({"result": result, "time": time})
 
@@ -135,9 +144,8 @@ def parse_log(log_fn: str, out_fn: str, timestamp: dt.datetime) -> None:
             if ts_result != None:
                 curr_ts = parse("{timestamp:ts}", ts_result.group(0))["timestamp"]
 
-    # write dict out to json, to be replaced with calls to mongodb api
-    with open(out_fn, 'w') as out_fp:
-        json.dump(login_dict, out_fp)
+    # Write to the database via Mongo API
+    insert_to_mongo(login_dict)
 
     return curr_ts
 
