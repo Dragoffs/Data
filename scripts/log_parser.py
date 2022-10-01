@@ -56,13 +56,21 @@ RE_LIST = [
 def insert_to_mongo(login_dict: dict) -> None:
     students = SL2_MONGO["Students"]
 
-    for user in login_dict: # user is the top-level key
-        for date in login_dict[user]: # lists of results organized by date
-                students.update_one(
-                    { "username": user },
-                    { "$addToSet": { "logs": { date: login_dict[user][date] } } },
-                    upsert=True
-                )
+    for user in login_dict:
+        for el in login_dict[user]:
+            students.update_one(
+                { "username": user },
+                { "$addToSet": { "logs": el } },
+                upsert=True
+            )
+
+#    for user in login_dict: # user is the top-level key
+#        for date in login_dict[user]: # lists of results organized by date
+#                students.update_one(
+#                    { "username": user },
+#                    { "$addToSet": { "logs": { datetime: login_dict[user] } } },
+#                    upsert=True
+#                )
 
 """
 {
@@ -86,17 +94,19 @@ def insert_to_mongo(login_dict: dict) -> None:
 """
 def update_dict(d: dict, user: str, success: bool, timestamp: dt.datetime) -> dict:
     result = "success" if success else "failure"
-    date = timestamp.strftime("%b %-d")
-    time = timestamp.strftime("%H:%M:%S")
+
+    # datetime = timestamp.strftime("%Y-%m-%dT%H:%M:%S.000+00:00") # Alternate?
+
+    datetime = timestamp.strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3]
+    datetime += "+00:00"
+
+    #date = timestamp.strftime("%b %-d")
+    #time = timestamp.strftime("%H:%M:%S")
 
     if user not in d:
-        d[user] = {}
-        d[user][date] = []
+        d[user] = []
 
-    if date not in d[user]:
-        d[user][date] = []
-
-    d[user][date].append({"result": result, "time": time})
+    d[user].append({"datetime": datetime, "result": result})
 
     return d
 
