@@ -64,44 +64,11 @@ def insert_to_mongo(login_dict: dict) -> None:
                 upsert=True
             )
 
-#    for user in login_dict: # user is the top-level key
-#        for date in login_dict[user]: # lists of results organized by date
-#                students.update_one(
-#                    { "username": user },
-#                    { "$addToSet": { "logs": { datetime: login_dict[user] } } },
-#                    upsert=True
-#                )
-
-"""
-{
-    user:
-    {
-        "Month Day":
-        [
-            {
-                "result": "failure",
-                "time": "00:00:00"
-            },
-
-            {
-                " "
-            },
-            ...
-        ]
-        ...
-    }
-}
-"""
 def update_dict(d: dict, user: str, success: bool, timestamp: dt.datetime) -> dict:
     result = "success" if success else "failure"
 
-    # datetime = timestamp.strftime("%Y-%m-%dT%H:%M:%S.000+00:00") # Alternate?
-
     datetime = timestamp.strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3]
     datetime += "+00:00"
-
-    #date = timestamp.strftime("%b %-d")
-    #time = timestamp.strftime("%H:%M:%S")
 
     if user not in d:
         d[user] = []
@@ -111,7 +78,7 @@ def update_dict(d: dict, user: str, success: bool, timestamp: dt.datetime) -> di
     return d
 
 # Using timestamp, scan new / changed lines and add to the database
-# Side effect: write to MongoDB via API
+# Add entries to the databse
 # Save most recent timestamp in a buffer and return it when the function is finished
 def parse_log(log_fn: str, out_fn: str, timestamp: dt.datetime) -> None:
     login_dict = {}

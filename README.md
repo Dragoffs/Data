@@ -1,6 +1,6 @@
 # Data
 
-Repository to store dummy data.
+Repository to store dummy data and log parsing utilities
 
 ## Logging on Solace
 
@@ -28,35 +28,29 @@ The following format is used for each of the failure and success modes of a logi
 <timestamp (m d hh:mm:ss)> <machine name> <system daemon (sshd)>: Failed password for invalid <user> from <ip address> port <port number> <ssh protocol (ssh2)>
 ```
 
-Attempts by an end user to login with the incorrect port number (but potentially a correct username) are not captured by `rsyslogd`
+Attempts by an end user to login with the incorrect port number (but potentially a correct username) will not captured by `rsyslogd`.
 
 Attempts to login to the wrong hostname will also not be captured. 
 
 ## Logfile Parsing
 
-`log_parser.py` takes a logfile and timestamp file as input and outputs results in JSON format.
+`log_parser.py` takes a logfile and timestamp file as input and transmits these results to the database accessible through MongoDB Atlas and the backend API routes ([https://github.com/Dragoffs/SL2/tree/main/backend/routes](github.com/Dragoffs/SL2/backend/routes)).
 
-The timestamp file allows the script to determine what should be parsed from the logfile and prevents storage of duplicate records in the database.
+The timestamp file allows the script to determine what should be parsed from the logfile in order to speed up the parsing process.  Correct usage of the API in `log_parser.py` should prevent any duplicate records.
 
-Lines not already parsed are matched against the three patterns above and login attempts are stored in the following JSON structure:
+Lines not already parsed are matched against the three login result patterns (success, failure, & invalid user) and login attempts are stored in the following Python dictionary structure:
 
 ```
 {
-    user:
-    {
-        "Month Day":
-        [
-            {
-                "result": "failure",
-                "time": "00:00:00"
-            },
-            ...
-        ],
-        ...
-    }
+	username: [
+		{
+			datetime: <yyyy-mm-dd>T<hh:mm:ss.uuu>+<HH:MM>,
+			result: <"Failure", "Success">
+		}
+	]
 }
 ```
 
-Login attempts (result and time) for each user are stored in a list organized by date.
+Where `u` represents one digit in the milliseconds value and `HH:MM` represents a timezone offset of `HH` hours and `MM` minutes.
 
-The results are written to a JSON file, but in the final version of the parser they should transmit the data to the database via the MongoDB API. 
+These objects are "up-serted" (a combination of updating and insertion) into the database, preventing duplicates and inserting new values when appropriate.
