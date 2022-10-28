@@ -34,7 +34,7 @@ Attempts to login to the wrong hostname will also not be captured.
 
 ## Logfile Parsing
 
-`log_parser.py` takes a logfile and timestamp file as input and transmits these results to the database accessible through MongoDB Atlas and the backend API routes ([https://github.com/Dragoffs/SL2/tree/main/backend/routes](Dragoffs/SL2/backend/routes)).
+`log_parser.py` takes a logfile and timestamp file as input and transmits these results to the database accessible through MongoDB Atlas and the backend API routes ([Dragoffs/SL2/backend/routes](https://github.com/Dragoffs/SL2/tree/main/backend/routes)).
 
 The timestamp file allows the script to determine what should be parsed from the logfile in order to speed up the parsing process.  Correct usage of the API in `log_parser.py` should prevent any duplicate records.
 
